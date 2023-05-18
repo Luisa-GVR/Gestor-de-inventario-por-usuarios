@@ -6,14 +6,21 @@ El primer paso antes de empezar es descargar la versión a utilizar de java, en 
 Se recomienda usar el puerto 3308, y agregar un usuario con nombre: Luisa y contraseña: root, esto obviamente puede ser cambiado de forma sencilla, pero en el caso de querer simplemente instalar y no mover nada de codigo, se puede tomar esta opción (Más adelante se dirá dónde se configuró esto.)
 Una vez instalado esto, es cuestión de abrir el codigo, dejar que se descarguen las librerías y en el navegador se entrará a la dirección http://localhost:8080/login
 En este lugar se deberá ingresar un usuario y una contraseña.
+
 Estas pueden ser añadidas en la base de datos Desarrollo, tabla users, nos vamos al apartado de Datos y agregamos el user id, en dado caso de tener un email, nombre de usuario, contraseña (Encriptada con BCrypt, en el programa hay un apartado dentro de Database, con una clase llamada psswGen, solo es cuestión de cambiar el String prueba y se imprimirá el String encriptado para hacer que el usuario esté funcionando, enabled se deja en 1, después, la id que se le añadió a usuario se agrega en users_roles con su respectivo role_id, siendo 1=usuario, 2=creator, 3=editor y 4=admin, en esta parte se pueden poner varios roles, solo es cuestión de agregar otra fila con el user id deseado)
 Una vez agregada las credenciales, nos aparecerá la tabla de inventario, una bienvenida al nombre del usuario, y 4 opciones.
+
 Borrar: Solo puede ser accedida por administradores, te pide el codigo de el producto y lo eliminará, no sin antes pedir una confirmación.
+
 Crear: Solo puede ser accedida por creators, crea un nuevo producto, donde se le puede añadir codigo, producto, cantidad, descripción y precio.
+
 Editar: Solo puede ser accedida por editors, admite cambiar la cantidad y el precio de los productos mostrados al dar click en editar.
+
 Logout: Te saca de tu sesión y redirige a home.
+
 Se debe tener en cuenta que si un usuario quiere entrar a una de las opciones con las cuales no cumple su permiso, le aparecerá una pantalla de error con la opción de volver a home.
 Además, este error puede aparecer debido a un uso inapropiado de la tabla, es decir, agregar contenido que no soporta (Números con longitud mayor a 9).
+
 Ojo, se debe tener en cuenta que el número máximo de caracteres soportado por números es de 8, mientras que de producto 15 y descripción 20, en el dado caso de que se sobrepase este número, la información obtenida será recortada.
 
 Información técnica:
