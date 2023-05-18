@@ -1,0 +1,235 @@
+button {
+  margin-bottom: 30px;
+  background-color: #A1ADBDC;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 6px 4px;
+  font-weight: 800;
+  border-radius:10px;
+  border: 2px solid black;
+  padding: 10px 0px;
+  -webkit-text-stroke: .4px white;
+  font-family: "Roboto Condensed", sans-serif;
+
+}
+.button:hover{
+    background-color: #686F79;
+    transition: 0.4s;
+}
+
+
+.medium-btm{
+ font size: 70px;
+ width: 70px;
+ height: 30px;
+}
+.big-btm{
+ font size: 120px;
+ width: 110px;
+ height: 50px;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+            body {
+
+                 background-color:#ffdefb;
+                 background-position:center;
+                 background-size: cover;
+                 justify-content: center;
+                 align-items: center;
+
+
+            }
+
+            * {
+                font-family:courier;
+            }
+
+            blockquote {
+                border-left:2px solid #AD61AC;
+                padding-left:3px;
+                margin-left:20px;
+            }
+
+            p, li, a {
+                font-size:8pt;
+            }
+
+            p {
+                margin:0;
+            }
+
+            h1 {
+                font-size:25pt;
+                margin-top:2px;
+                margin-bottom:2px;
+            }
+            h2{
+                font-size:20pt;
+                margin-top:2px;
+                margin-bottom:2px;
+            }
+            h3{
+                              font-size:12pt;
+                              margin-top:2px;
+                              margin-bottom:2px;
+                          }
+
+            a {
+                text-decoration:none;
+                color:#AD61AC;
+            }
+
+            a:hover {
+                color:#ffdefb;
+            }
+
+            .content {
+                border:1px solid #AD61AC;
+                border-radius:5px;
+                background:#FFF2FF;
+                box-shadow:0px 2px 5px 0px #AD61AC;
+                color: #000;
+            }
+
+
+            .titlecontainer {
+                background:#FFF2FF;
+                height:30px;
+                padding:5px;
+                padding-right:0;
+                padding-right:5px;
+                top:0;
+                left:0;
+                right:0;
+                font-size:10pt;
+                border-top-right-radius:4px;
+                border-top-left-radius:4px;
+                border-bottom:1px solid #AD61AC;
+                color: #000;
+            }
+
+            .titlecontainer a {
+                font-size:12pt;
+            }
+
+
+            #postbodycontainer {
+                clear:both;
+            }
+
+            #postbodycontainer, #postfoot {
+                padding:5px;
+            }
+
+            #postbodycontainer img {
+                max-width:200px;
+				height: auto;
+                border:1px solid #AD61AC;
+                display:block;
+                margin-left:auto;
+                margin-right:auto;
+            }
+
+
+background-layer {
+background-color:#ffdefb;
+                 background-position:center;
+                 background-size: cover;
+                 justify-content: center;
+                 align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://img.freepik.com/fotos-premium/muchos-lapices-colores-fondo-hoja-cuaderno_270100-867.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+foreground-image {
+  position: absolute;
+  top: 100px;
+  left: 36px;
+  width: 150px;
+  height: 150px;
+ foreground-image: url('https://cdn-icons-png.flaticon.com/512/1076/1076132.png');
+
+  z-index: 1;
+}
+erase{
+background-color:#ffdefb;
+                 background-position:center;
+                 background-size: cover;
+                 justify-content: center;
+                 align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://s1.1zoom.me/big0/326/Apples_Stationery_White_background_Notepad_Pencils_594440_1280x853.jpg');
+  background-size: cover;
+    background-position: center;
+}
+register{
+background-color:#ffdefb;
+                 background-position:center;
+                 background-size: cover;
+                 justify-content: center;
+                 align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://img.freepik.com/foto-gratis/fondo-regreso-escuela-utiles-escolares-espacio-copia-cuaderno_23-2148958998.jpg?w=1380&t=st=1684005857~exp=1684006457~hmac=84c1faf988277e8d76d20602b079a1c9ce62196e17e69d59f701534303609773');
+  background-size: cover;
+    background-position: center;
+}
+error{
+background-color:#ffdefb;
+                 background-position:center;
+                 background-size: cover;
+                 justify-content: center;
+                 align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://preview.free3d.com/img/2013/08/2162613934790542811/9q8glef8.jpg');
+  background-size: cover;
+    background-position: center;
+}
+editar{
+background-color:#ffdefb;
+                 background-position:center;
+                 background-size: cover;
+                 justify-content: center;
+                 align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://img.freepik.com/foto-gratis/utiles-escolares-espacio-copia-medio_24837-89.jpg?w=2000');
+  background-size: cover;
+    background-position: center;
+}
+
+
+
+

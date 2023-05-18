@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+<head><link rel="stylesheet" href="styles.css">
+    <title>Edit</title>
+</head>
+<style>
+h9{
+text-shadow: 4px 4px 4px black;
+color: white;
+-webkit-text-stroke: 3px black;
+font-family: "Roboto Condensed", sans-serif;
+font-size: 30px;
+font-weight: 800;
+text-transform:uppercase;
+}
+        .etiquetaIns{
+text-shadow: 2px 2px 2px white;
+color: black;
+-webkit-text-stroke: 1px black;
+font-size: 15px;
+font-weight: 400;
+border-radius:20px;
+text-transform:uppercase;
+background-color:#ffdefb;
+}
+</style>
+<editar>
+<center><body>
+<p><br><br><br><br><br><br><br>
+<h9>Editar productos </h9> <br><br>
+    <center><label class = "etiquetaIns">Selecciona el producto a editar</label></center>
+<br><br>
+
+<div id="buttons-container">
+</div>
+<center></center>
+<ul>
+    <li th:each="nombre : ${nombresProducto}">
+        <form action="/edit/change" method="post">
+            <input type="hidden" name="producto" th:value="${nombre}" />
+            <button id="idnombre" type="submit" th:text="${nombre}"></button>
+
+            <input type="hidden" name="productos" th:value="idnombre"/>
+        </form>
+    </li>
+</ul>
+<br><br>
+<center> <button
+        class="button big-btm"
+        id="home"
+        th:onclick="|window.location.href='@{/home}'|" >
+    Home</button> </center>
+
+</p>
+</body></center></editar>
+</html>

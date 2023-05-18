@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<link rel="stylesheet" href="styles.css"><head>
+<style>button {
+  margin-bottom: 30px;
+  background-color: #FFB6C1;
+  color: black;
+  text-align: center;
+  font size: 50px;
+  cursor: pointer;
+  margin: 6px 4px;
+  font-weight: 700;
+  border-color #DB7093:
+  border-radius:10px;
+  border: 2px solid #DB7093;
+}
+.button:hover{
+    background-color: #DB7093;
+    transition: 0.4s;
+}
+
+.medium-btm{
+ font size: 70px;
+ width: 70px;
+ height: 30px;
+}
+.big-btm{
+ font size: 120px;
+ width: 110px;
+ height: 50px;
+}
+.etiquetaTitle{
+text-shadow: 8px 8px 8px black;
+-webkit-text-stroke: 1px black;
+color: white;
+font-size: 50px;
+font-family: "Roboto Condensed", sans-serif;
+font-weight: 800;
+}
+.etiquetaText{
+text-shadow: 4px 4px 4px black;
+-webkit-text-stroke: 1px black;
+color: white;
+font-size: 28px;
+font-family: "Roboto Condensed", sans-serif;
+font-weight: 800;
+}
+
+
+
+            body {
+                background-image: url('https://static.vecteezy.com/system/resources/previews/002/420/937/original/back-to-school-background-with-school-supplies-background-free-photo.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color:#ffdefb;
+                background-position:center;
+                background-size: cover;
+                }
+            }
+
+
+            * {
+                font-family:courier;
+            }
+
+            blockquote {
+                border-left:2px solid #AD61AC;
+                padding-left:3px;
+                margin-left:20px;
+            }
+
+            p, li, a, div {
+                font-size:8pt;
+            }
+
+            p {
+                margin:0;
+            }
+
+            h1 {
+                font-size:25pt;
+                margin-top:2px;
+                margin-bottom:2px;
+            }
+            h2{
+                font-size:20pt;
+                margin-top:2px;
+                margin-bottom:2px;
+            }
+            h3{
+                              font-size:12pt;
+                              margin-top:2px;
+                              margin-bottom:2px;
+                          }
+
+            a {
+                text-decoration:none;
+                color:#AD61AC;
+            }
+
+            a:hover {
+                color:#ffdefb;
+            }
+
+            .content {
+                border:1px solid #AD61AC;
+                border-radius:5px;
+                background:#FFF2FF;
+                box-shadow:0px 2px 5px 0px #AD61AC;
+                color: #000;
+            }
+
+
+            .titlecontainer {
+                background:#FFF2FF;
+                height:30px;
+                padding:5px;
+                padding-right:0;
+                padding-right:5px;
+                top:0;
+                left:0;
+                right:0;
+                font-size:10pt;
+                border-top-right-radius:4px;
+                border-top-left-radius:4px;
+                border-bottom:1px solid #AD61AC;
+                color: #000;
+            }
+
+            .titlecontainer a {
+                font-size:12pt;
+            }
+
+
+            #postbodycontainer {
+                clear:both;
+            }
+
+            #postbodycontainer, #postfoot {
+                padding:5px;
+            }
+
+            #postbodycontainer img {
+                max-width:200px;
+				height: auto;
+                border:1px solid #AD61AC;
+                display:block;
+                margin-left:auto;
+                margin-right:auto;
+            }
+
+
+
+</style>
+  <title>Login</title>
+</head>
+
+<body><center><br><br><br><br><label class="etiquetaTitle">PAPELERIA TIJERITAS</label> <br><br><br><br>
+<form action="login" method='POST'>
+  <label class="etiquetaText">USUARIO:</label>
+
+  <label for="username"> <br></label>
+  <input type="text" id="username" name="username">
+
+  <br><br><br>
+  <label class="etiquetaText">CONTRASEÑA:</label>
+  <label for="password"> <br></label>
+  <input type="password" id="password" name="password">
+<br><br><br>
+  <input name="submit" type="submit" value="submit" />
+
+</form>
+
+</center></body>
+</html>

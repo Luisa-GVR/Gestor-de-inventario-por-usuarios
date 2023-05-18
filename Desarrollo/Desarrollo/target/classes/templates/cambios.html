@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head><link rel="stylesheet" href="styles.css"><style>
+button {
+  margin-bottom: 30px;
+  background-color: #A1ADBDC;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 6px 4px;
+  font-weight: 800;
+  border-radius:10px;
+  border: 2px solid black;
+  padding: 10px 0px;
+  -webkit-text-stroke: .4px white;
+  font-family: "Roboto Condensed", sans-serif;
+
+}
+.button:hover{
+    background-color: #686F79;
+    transition: 0.4s;
+}
+.medium-btm{
+ font size: 70px;
+ width: 70px;
+ height: 30px;
+}
+.big-btm{
+ font size: 120px;
+ width: 110px;
+ height: 50px;
+}
+    h12{
+text-shadow: 4px 4px 4px black;
+color: white;
+-webkit-text-stroke: 3px black;
+font-family: "Roboto Condensed", sans-serif;
+font-size: 30px;
+font-weight: 800;
+text-transform:uppercase;
+}
+        h11{
+text-shadow: 2px 2px 2px white;
+color: black;
+-webkit-text-stroke: 2px black;
+font-size: 25px;
+font-weight: 400;
+border-radius:20px;
+text-transform:uppercase;
+}
+            body {
+                background-color:#ffdefb;
+                 background-position:center;
+                 background-size: cover;
+                 justify-content: center;
+                 align-items: center;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://s1.1zoom.me/big0/177/School_Stationery_Multicolor_Ballpoint_pen_Pencils_568609_1271x1024.jpg');
+  background-size: cover;
+    background-position: center;
+
+            }
+
+            * {
+                font-family:courier;
+            }
+
+            blockquote {
+                border-left:2px solid #AD61AC;
+                padding-left:3px;
+                margin-left:20px;
+            }
+
+            p, li, a, div {
+                font-size:8pt;
+            }
+
+            p {
+                margin:0;
+            }
+
+            h1 {
+                font-size:25pt;
+                margin-top:2px;
+                margin-bottom:2px;
+            }
+            h2{
+                font-size:20pt;
+                margin-top:2px;
+                margin-bottom:2px;
+            }
+            h3{
+                              font-size:12pt;
+                              margin-top:2px;
+                              margin-bottom:2px;
+                          }
+
+            a {
+                text-decoration:none;
+                color:#AD61AC;
+            }
+
+            a:hover {
+                color:#ffdefb;
+            }
+
+            .content {
+                border:1px solid #AD61AC;
+                border-radius:5px;
+                background:#FFF2FF;
+                box-shadow:0px 2px 5px 0px #AD61AC;
+                color: #000;
+            }
+
+
+            .titlecontainer {
+                background:#FFF2FF;
+                height:30px;
+                padding:5px;
+                padding-right:0;
+                padding-right:5px;
+                top:0;
+                left:0;
+                right:0;
+                font-size:10pt;
+                border-top-right-radius:4px;
+                border-top-left-radius:4px;
+                border-bottom:1px solid #AD61AC;
+                color: #000;
+            }
+
+            .titlecontainer a {
+                font-size:12pt;
+            }
+
+
+            #postbodycontainer {
+                clear:both;
+            }
+
+            #postbodycontainer, #postfoot {
+                padding:5px;
+            }
+
+            #postbodycontainer img {
+                max-width:200px;
+				height: auto;
+                border:1px solid #AD61AC;
+                display:block;
+                margin-left:auto;
+                margin-right:auto;
+            }
+
+
+</style>
+</head>
+<br><br><br><title>Agregue los cambios   </title>
+<body>
+
+
+
+<form action="/submitEdit" method="post">
+
+
+    <center><h11>Agregue los cambios para [[${ID}]]</h11></center><br>
+
+    <input type="hidden" id="ID" name="ID" th:value="${ID}" hidden>
+
+    <br>
+    <center><label for="Cantidad"><h11>Cantidad:</h11></label></center>
+    <center><input type="number" id="Cantidad" name="Cantidad" placeholder th:value=${valorCantidad}></center>
+
+    <br>
+    <center><label for="Precio"><h11></h11Z>Precio:</h11></label></center>
+    <center><input type="number" id="Precio" name="Precio" placeholder th:value=${valorPrecio}></center>
+
+    <br><br><br>
+
+    <center><button class="button big-btm" type="submit">Submit</button></center>
+
+</form>
+
+
+
+
+<center> <button
+        class="button big-btm"
+        id="home"
+        th:onclick="|window.location.href='@{/home}'|" >
+    Home</button> </center>
+</body>
+</html>
